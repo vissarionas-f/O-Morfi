@@ -1,0 +1,263 @@
+body {
+  background-color: #f2f2f2;
+  font-family: "Brygada 1918", serif;
+}
+
+/* for the bug in aos library */
+@media (max-width: 768px) {
+  .hideOverflowOnMobile {
+    overflow-x: hidden;
+  }
+}
+
+.navbar-collapse {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+#main-navbar.navbar {
+  font-size: 1.3rem;
+  padding: 0rem 1rem;
+  text-transform: capitalize;
+}
+
+#brand-logo {
+	height: 3rem;
+  margin: 1rem 0rem;
+}
+
+#nav-items a.navbar-brand {
+  font-size: 2rem;
+  text-transform: lowercase;
+}
+
+#nav-items a.navbar-brand:hover {
+  color: #d47d16;
+}
+
+#main-navbar a {
+  color: #820d00dc;
+}
+
+#main-navbar a:hover,
+#main-navbar a:focus {
+  text-shadow: 0px 4px 6px #d47d16;
+}
+
+#fb a:hover,
+#fb a:focus {
+  color: #1877f2;
+  text-shadow: none;
+}
+
+#insta a:hover,
+#insta a:focus {
+  color: orangered;
+  text-shadow: none;
+}
+
+.scrolled {
+  background: #f2f2f2;
+  transition: background 500ms;
+}
+
+/* for not changing the color when the dropmenu item is clicked */
+.dropdown-menu li a.dropdown-item {
+	background-color: initial;
+}
+
+/* mobile menu */
+
+button.navbar-toggler {
+  color: #820d00dc;
+  margin-top: 1rem;
+}
+
+.mobilemenu {
+  background-color: #f2f2f2; /* when mobile menu button is clicked */
+}
+
+@media (max-width: 575px) {
+  .navbar-collapse {
+    display: flex;
+    justify-content: left;
+    text-align: left;
+  }
+}
+
+#h1 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  font-size: 2.5rem;
+  text-shadow: none;
+  color: #ec8200;
+  border-bottom: 2px solid #ec8200;
+  width: 40%;
+  text-transform: capitalize;
+}
+
+@media (max-width: 991px) {
+  #h1 {
+    width: 80%;
+    margin-top: 1.5rem;
+  }
+}
+
+/* landind text */
+
+#landing-text {
+  text-align: center;
+  color: #820d00dc;
+  /* full view */
+  padding-top: 7rem;
+  padding-bottom: 3rem;
+  text-shadow: 0px 4px 6px #9e9e9edc;
+}
+
+@media (max-width: 1000px) {
+  #landing-text {
+    padding-bottom: 4rem;
+  }
+}
+
+
+/* cards */
+
+.card {
+  border: 0;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+    rgba(17, 17, 26, 0.05) 0px 8px 32px;
+  transition: 0.7s ease;
+}
+
+.card:hover {
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, #820e00 0px 8px 32px;
+}
+
+.card a.btn {
+  background-color: #820e00;
+  color: #F2F2F2;
+  text-shadow: none;
+  border: 2px solid #820e00;
+}
+
+.card a.btn:hover {
+	background-color: #F2F2F2;
+	color: #820e00;
+	text-shadow: none;
+	border: 2px solid #820e00;
+}
+
+/* end of cards */
+
+#work-time ul {
+  /* max-width: 30%; */
+  margin-top: 4rem;
+  text-shadow: 0px 4px 6px #9e9e9edc;
+  list-style: none;
+  position: relative;
+  left: -1.2rem;
+}
+
+#work-time ul li a {
+  text-decoration-line: none;
+  color: #820d00dc;
+}
+
+#work-time ul li a:hover,
+#work-time ul li a:focus {
+  text-decoration-line: underline;
+}
+
+#scrollButton {
+  position: fixed;
+  right: 2rem;
+  bottom: 1rem;
+  color: rgb(245, 245, 245);
+  font-size: 1.8rem;
+  display: none;
+}
+
+@media (min-width: 991px) {
+  .card > img {
+    max-height: 20rem;
+    max-height: 15rem;
+  }
+}
+
+@media (max-width: 991px) {
+  #scrollButton {
+    right: 2.5rem;
+  }
+}
+
+/* Footer */
+#footer-basic-centered {
+  background-color: #820e00;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: center;
+  padding-top: 0.7rem;
+  margin-bottom: 0;
+  color: whitesmoke;
+  padding: 1.45rem;
+  text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+#footer-basic-centered .footer-company-motto {
+  /* color: #8d9093; */
+  font-size: 1.3rem;
+  margin: 0;
+  padding: 0;
+}
+
+#footer-basic-centered .footer-company-name {
+  /* color: #8f9296; */
+  font-size: 1.2rem;
+  padding-top: 0.2rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#footer-basic-centered .footer-company-name span {
+  font-size: 1.3rem;
+}
+
+#footer-basic-centered #footer-social {
+  padding-top: 0.2rem;
+  margin-bottom: 0.7rem;
+  font-size: 1.4rem;
+}
+
+#footer-basic-centered #footer-social span a {
+  padding: 0.2rem;
+  margin: 0.2rem;
+  color: whitesmoke;
+}
+
+#footer-basic-centered #footer-social span#insta a:hover,
+#footer-basic-centered #footer-social span#insta a:focus {
+  color: orangered;
+}
+
+#footer-basic-centered #footer-social span#fb a:hover,
+#footer-basic-centered #footer-social span#fb a:focus {
+  color: #1877f2;
+}
+
+#footer-basic-centered .developed-by,
+.developed-by a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 1rem;
+}
+
+.developed-by a:hover,
+.developed-by a:focus {
+  text-decoration: underline;
+}
+
+/* End of footer */

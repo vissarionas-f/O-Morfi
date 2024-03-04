@@ -1,0 +1,36 @@
+body {
+  background-color: #f2f2f2;
+  font-family: "Brygada 1918", serif;
+  text-align: center;
+}
+
+#landing img {
+  max-height: 70vh;
+}
+
+#landing p {
+  font-size: 1.4rem;
+}
+
+#social {
+  font-size: 2rem;
+}
+
+#social a {
+  color: #c53f3f;
+}
+
+#fb a:hover {
+  color: #1877f2;
+  opacity: 0.8;
+}
+
+#insta a:hover {
+  color: #fd1d1d;
+  opacity: 0.8;
+}
+
+#insta,
+#fb {
+  padding: 1.2rem;
+}
